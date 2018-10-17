@@ -1,0 +1,166 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+#dates  a {
+	color: #666;
+	font-size:16px;
+	text-decoration: none;
+	-webkit-transition: 0.5s;
+	-moz-transition: 0.5s;
+	-o-transition: 0.5s;
+	-ms-transition: 0.5s;
+	transition: all 0.5s;
+} 
+#dates a.selected {
+		color: #1ab093;
+		font-size:20px;
+	}
+
+.sociales {
+	text-align: center;
+	margin-bottom: 20px;
+}
+
+	#timeline {
+		width: 920px;
+		height: 420px;
+		overflow: hidden;
+		margin: 10px auto;
+		position: relative;
+	}
+		#dates {
+			width: 920px;
+			height: 60px;
+			overflow: hidden;
+			margin-top:50px;
+		}
+			#dates li {
+    list-style: none;
+    float: left;
+    width: 176px;
+    height: 58px;
+    font-size: 16px;
+    text-align: center;
+    position: relative;
+    color: #666;
+}
+		#dates a {
+    display: block;
+    width: 176px;
+    height: 58px;
+    line-height: 92px;
+}
+.circle{
+	width:10px;
+	height:10px;
+	text-align: center;
+	background:url(../static/images/circle1.png);
+	 transition: all .2s;
+	 z-index:1;
+	 margin-left:83px;
+	 position:absolute;
+}
+				#dates a {
+					
+				}
+				#dates .selected {
+			        font-size: 20px;
+				}
+		
+		#issues {
+			width: 920px;
+			height: 310px;
+			overflow: hidden;
+		}	
+			#issues li {
+				/* box-sizing: border-box; */
+				width: 920px;
+				height: 310px;
+				list-style: none;
+				float: left;
+				font-size: 16px;
+				word-wrap: break-word;
+			}
+				#issues li p {
+					font-size: 16px;
+					font-weight: normal;
+					line-height: 22px;
+				}
+		
+		#grad_left,
+		#grad_right {
+			width: 100px;
+			height: 350px;
+			position: absolute;
+			top: 0;
+		}
+			#grad_left {
+		        left: 0;
+		        background: url('../images/grad_left.png') repeat-y;
+			}
+			#grad_right {
+		        right: 0;
+		        background: url('../images/grad_right.png') repeat-y;
+			}
+		
+		#next,
+		#prev {
+			position: absolute;
+			top: 0;
+			font-size: 70px;
+			top: 170px;
+			width: 22px;
+			height: 38px;
+			background-position: 0 0;
+			background-repeat: no-repeat;
+			text-indent: -9999px;
+			overflow: hidden;
+		}
+			#next:hover,
+			#prev:hover {
+				background-position: 0 -76px;
+			}
+			#next {
+				position: absolute;
+				display: inline-block;
+				right: 0;
+				top:333px;
+				background-image: url('../images/next.png');
+			}
+			#prev {
+				left: 0;
+				background-image: url('../images/prev.png');
+			}
+				/* #next.disabled,
+				#prev.disabled {
+					opacity: 0.2;
+				} */
+				
+	.hisline {
+    width: 880px;
+    height: 2px;
+    background: url(../static/images/hisline.png);
+    position: absolute;
+    left: 20px;
+    bottom: 54px;
+}
+
+ #issues li.selected {
+    width:920px;
+    min-height:310px;
+    position: relative;
+    overflow-y:scroll;
+    overflow-x:hidden;
+} 
+#issues li.selected::-webkit-scrollbar
+{
+    width: 2px;
+    height: 1px;
+    background: #F5F5F5; 
+} 
+#issues li.selected::-webkit-scrollbar-thumb
+{
+    border-radius: 1px;
+    background-color: #1ab093;
+}  

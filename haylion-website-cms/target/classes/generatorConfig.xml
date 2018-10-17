@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE generatorConfiguration PUBLIC "-//mybatis.org//DTD MyBatis Generator Configuration 1.0//EN" "http://mybatis.org/dtd/mybatis-generator-config_1_0.dtd">
+<generatorConfiguration>
+	<classPathEntry
+		location="E:\mysql-connector-java-5.1.43-bin.jar"/>
+	<context id="my" targetRuntime="MyBatis3">
+		<commentGenerator>
+			<property name="suppressDate" value="false"/>
+            
+		</commentGenerator>
+
+		<jdbcConnection driverClass="com.mysql.jdbc.Driver" 
+			connectionURL="jdbc:mysql://120.78.186.51:3306/db_blog"  
+			userId="blog_admin"  
+			password="123456">  
+		</jdbcConnection>
+		<!-- connectionURL="jdbc:mysql://192.168.5.103:3306/test"   -->
+
+                        
+		<javaModelGenerator targetPackage="com.haylion.entity"
+			targetProject="haylion-website-cms">
+			<property name="enableSubPackages" value="true"/>
+			<property name="trimStrings" value="true"/>
+		</javaModelGenerator>
+
+		<sqlMapGenerator targetPackage="com.haylion.mappers"
+			targetProject="haylion-website-cms">
+			<property name="enableSubPackages" value="true"/>
+		</sqlMapGenerator>
+
+		<javaClientGenerator targetPackage="com.haylion.mappers"
+			targetProject="haylion-website-cms" type="XMLMAPPER">
+			<property name="enableSubPackages" value="true"/>
+		</javaClientGenerator>
+
+
+		<table tableName="t_module"  domainObjectName="Module" enableCountByExample="false" enableUpdateByExample="false" enableDeleteByExample="false" enableSelectByExample="false" selectByExampleQueryId="false"/> 
+		<!-- <table tableName="charging_pile_operation"  domainObjectName="ChargerPileOperation" enableCountByExample="false" enableUpdateByExample="false" enableDeleteByExample="false" enableSelectByExample="false" selectByExampleQueryId="false"/>  -->
+		<!--<table tableName="vehicle_status"  domainObjectName="StatusInfo" enableCountByExample="false" enableUpdateByExample="false" enableDeleteByExample="false" enableSelectByExample="false" selectByExampleQueryId="false"/>-->
+	 
+	  
+		<!-- <table tableName="operationteam"  domainObjectName="OperationTeam" enableCountByExample="false" enableUpdateByExample="false" enableDeleteByExample="false" enableSelectByExample="false" selectByExampleQueryId="false"/> -->
+
+		<!-- <table tableName="waybill_sheet"  domainObjectName="WayBill" enableCountByExample="false" enableUpdateByExample="false" enableDeleteByExample="false" enableSelectByExample="false" selectByExampleQueryId="false"/> -->
+
+		<!-- <table tableName="chargeservice"  domainObjectName="Charge" enableCountByExample="false" enableUpdateByExample="false" enableDeleteByExample="false" enableSelectByExample="false" selectByExampleQueryId="false"/> -->
+
+		<!--  <table tableName="dispatchtask"  domainObjectName="Dispatchtask" enableCountByExample="false" enableUpdateByExample="false" enableDeleteByExample="false" enableSelectByExample="false" selectByExampleQueryId="false"/> -->
+
+
+		<!-- <table tableName="versioninformation"  domainObjectName="VersioninFormation" enableCountByExample="false" enableUpdateByExample="false" enableDeleteByExample="false" enableSelectByExample="false" selectByExampleQueryId="false"/>
+<table tableName="cardata"  domainObjectName="CarData" enableCountByExample="false" enableUpdateByExample="false" enableDeleteByExample="false" enableSelectByExample="false" selectByExampleQueryId="false"/>
+<table tableName="carstate"  domainObjectName="CarState" enableCountByExample="false" enableUpdateByExample="false" enableDeleteByExample="false" enableSelectByExample="false" selectByExampleQueryId="false"/>
+<table tableName="logonresponse"  domainObjectName="LogonReponse" enableCountByExample="false" enableUpdateByExample="false" enableDeleteByExample="false" enableSelectByExample="false" selectByExampleQueryId="false"/>
+<table tableName="obdagreement"  domainObjectName="ObdaGreement" enableCountByExample="false" enableUpdateByExample="false" enableDeleteByExample="false" enableSelectByExample="false" selectByExampleQueryId="false"/>       -->
+	</context>
+</generatorConfiguration>
